@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>     
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="login.css">   
+ <title>Website Hammons</title>
+</head>
+ 
+<body onload="getTime()">
+    
+<div class="navbar">
+ <a class="selected" href="/homepage.html">Homepage</a>
+ <a href="/login.html">Login</a>
+ <a href="/aboutme.html">About Me</a>     
+</div>
+<hr>
+ 
+<div class="grid-container"> 
+ <div class="grid-item" id="datetime"></div>     
+ <div class="grid-item" id="user" >Hi, User</div>
+ <div class="grid-item" id="logout">Logout</div>
+</div>  
+<hr>        
+<h1>This sample site showcases some HTML, CSS, JavaScript, PHP, and MYSQL skills.</h1><br>    
+
+<div class="row">
+<div class="side">
+ <h2>Existing Users</h2>
+  <form action="login.php" method="POST">
+    <p>Username:</p> 
+     <input type="text" name="username" id="user"> 
+    <p>Password:</p>
+     <input type="password" name="password" id="pwd"><br><br>
+   <button type="submit" id="sub">Submit</button>
+  <hr>
+  </form>
+</div>
+  
+<div class="main">
+ <h2>New Users</h2>   
+  <form action="createlogin.php" method="POST" onsubmit="validateForm(event);">
+   <p>Username:</p> 
+    <input type="text" name="username" id="user"> 
+     <div id="usermsg"></div><br>
+   <p>Password:</p>
+     <input type="password" name="password" id="pwd">
+   <p>Re-enter Password:</p>
+     <input type="password" name="passreentry" id="pwd1">
+      <div id="pwdmsg"></div><br>
+  </form>
+</div>
+</div>
+     
+<footer>Contact me at: <a href ="mailto:zjhammons@gmail.com">Email</a> 
+        or by phone at: <a href="tel:123-456-7890">123-456-7890</a>
+</footer>    
+<script src="web.js"></script> 
+</body>
+</html>

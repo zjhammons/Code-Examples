@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+ <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="project8.css">    
+  <title>Project 8 Hammons</title>
+ </head>
+
+ <body>
+  <h1>Event Handling and the DOM</h1>
+  <hr>    
+  <p id="instructions"> Please enter a username, password and a five digit zip code.<br>
+     Passwords must have at least 8 character and 1 digit.</p>  
+  <hr>
+    
+   <form action="project8.php" method="POST" onsubmit="validateForm(event);">
+     <div class="container"> 
+        <p>Username:</p> 
+        <input type="text" name="username" id="user"> 
+        <div id="usermsg"></div><br>
+        
+        <p>Password:</p>
+        <input type="password" name="password" id="pwd">
+          <img id="image" src="greencheck.png" alt="password checker">   
+        
+        <p>Re-enter Password:</p>
+        <input type="password" name="passreentry" id="pwd1">
+        <div id="pwdmsg"></div><br>
+
+        <p>Zip Code:</p>
+        <input type="number" name="zipcode" id="zip">
+        <div id="zipmsg"></div><br>
+     </div>
+    <button type="submit" id="sub">Submit</button>
+    <hr>
+   </form>
+  <script src="project8.js"></script>              
+ </body>
+</html>

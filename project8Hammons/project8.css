@@ -1,0 +1,78 @@
+h1{
+    background: lightgray;
+    border: 3px;
+    border-style:groove;
+    border-color: darkblue;
+    text-align: center;
+    color: darkblue;
+    font-size: 32px;
+    font-family: cursive;
+}
+
+#instructions{
+    text-align: center;
+    font-size: 26px;
+    font-style: oblique;
+    padding-top: 0px;
+}
+
+p{
+ padding-top: 20px;    
+ font-size: 20px;
+ margin: 5px;
+}
+
+
+.container{
+    width: 250px;
+    clear: both;
+}
+
+.container input{
+    width: 80%;
+    height: 25px;
+    clear: both;
+}
+
+#usermsg{
+    text-align: right;
+    position: fixed;
+    width: 45%;
+    font-size: 20px;
+    font-weight: bold;
+    color: red; 
+}
+
+#image{
+    display: block;
+    margin-left: 210px;
+    width: 15px;
+    height: 15px;
+}
+
+#pwdmsg{
+    text-align: right;
+    position: fixed;
+    width: 45%;
+    font-size: 20px;
+    font-weight: bold;
+    color: red; 
+}
+
+#zipmsg{
+    text-align: right;
+    position: fixed;
+    width: 49%; 
+    font-size: 20px;
+    font-weight: bold;
+    color: red; 
+}
+
+#sub{
+    margin-top: 50px;
+    padding: 10px;
+    width: 25%;
+    font-size: 30px;
+    background: black;
+    color: white;
+}

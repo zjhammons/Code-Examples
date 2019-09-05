@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="project2.css">    
+  <title>Bill and Tip Calculator Hammons</title>
+</head>
+
+<body>
+  <h1>Bill and tip calculator</h1>   
+  
+  <div id=billcalculator>   
+    <form>
+      <p>Enter bill amount.</p>
+        $<input id="amount" type="number"> 
+      
+      <p>What percent would you like to tip?</p>
+        <select id="tipselect">
+            <option disabled selected value="0">Choose tip percentage</option>
+            <option value="0.30">30%</option>
+            <option value="0.25">25%</option>
+            <option value="0.20">20%</option>
+            <option value="0.15">15%</option>
+            <option value="0.10">10%</option>
+            <option value="0.05">5%</option>
+        </select>
+      
+      <p>Enter the number of people paying the bill.</p>    
+        <input id="numpeople" type="number"> People<br>
+        
+        <button type="button" id="calculate">Calculate!</button>   
+    </form>   
+  </div>    
+    
+  <div id="totals">
+    <h2>Tip Amount</h2>
+      <p id="tipamount">0.00</p> 
+      <small id="perperson">per person</small>
+      
+      <h2>Bill Amount</h2>
+      <p id="billamount">0.00</p> 
+      <small id="billperperson">each</small>
+  </div>
+    
+  <script src="project2.js"></script>              
+</body>
+</html>
