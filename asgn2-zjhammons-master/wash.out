@@ -1,0 +1,28 @@
+Script started on Wed 20 Feb 2019 07:56:35 PM EST
+zhammons@snoopy:~/asgn2-zjhammons$ #this is my test plan 
+zhammons@snoopy:~/asgn2-zjhammons$ make
+gcc -Wall -c wash.c
+gcc -Wall wash.o -o wash
+zhammons@snoopy:~/asgn2-zjhammons$ wash empty.txt filea.txt fileb.txt 
+File empty.txt: Command:c
+FILE EMPTY!
+File filea.txt: Command:c
+the abc's 
+abcde
+fghijk
+lmnop
+qrst
+uvwxyz
+abc's
+File fileb.txt: Command:c
+hi
+hello
+hey
+goodbye
+bye
+cya
+later
+zhammons@snoopy:~/asgn2-zjhammons$ exit
+exit
+
+Script done on Wed 20 Feb 2019 07:57:05 PM EST

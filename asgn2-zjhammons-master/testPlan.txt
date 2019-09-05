@@ -1,0 +1,18 @@
+Partial of test plan that tests the command line arguments
+command      input  output         rationale
+no arguments        nothing        verify program starts up and shuts down
+wash a b c    q     nothing        verify program correctly quits after startup
+wash a        n     nothing        verify program correctly quits at end of list
+wash a b c    n q   nothing        verify program correctly quits after next
+wash a b c    c q   contents of a  verify program get contents to screen (assuming that a exists)
+wash a b c    c q   "a not found"  verify program print error message to screen (where a does not exists)
+wash a b c    t q   nothing        verify file a is created and has length zero (where file a does not exist)
+wash a b c    c q   nothing        verify file a now has zero length (where file a exists)
+
+Black box test plan for 'c' cat command
+command			input		output			rationale
+wash a(empty file) 	c	        "nothing in file"	Let the user know that there was nothing in the file to view error
+wash a b 		c n		file a contents		test that it will display file a contents
+			c n		file b contents		test that it will display the next files contents
+			c n 		"no more files"		test that it knows when there are no files next
+wash a(hugefile)	c		"file too large"	display error message if file too large to display
