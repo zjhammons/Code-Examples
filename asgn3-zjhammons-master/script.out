@@ -1,0 +1,148 @@
+Script started on Thu 14 Mar 2019 06:57:06 PM EDT
+zhammons@snoopy:~/asgn3-zjhammons$ make
+gcc -Wall -g -DMEMWATCH -DMW_STDIO -c cardmain.c
+gcc -Wall -g -DMEMWATCH -DMW_STDIO -c cardlist.c
+gcc -Wall -g -DMEMWATCH -DMW_STDIO -w -c memwatch.c
+gcc -Wall -g -DMEMWATCH -DMW_STDIO -o cardlist cardmain.o cardlist.o memwatch.o
+gcc -Wall -g -DMEMWATCH -DMW_STDIO -c playermain.c
+gcc -Wall -g -DMEMWATCH -DMW_STDIO -c playerlist.c
+gcc -Wall -g -DMEMWATCH -DMW_STDIO -o playerlist playermain.o playerlist.o memwatch.o
+zhammons@snoopy:~/asgn3-zjhammons$ ./cardlist 
+Command:b
+
+Rank: 2
+
+Suit: clubs
+
+Command:p
+
+2 of CLUBS
+Command:b
+
+Rank: ace
+
+Suit: diamonds
+
+Command:p
+
+ACE of DIAMONDS
+2 of CLUBS
+Command:e
+
+Rank: king
+
+Suit: hearts
+
+Command:p
+
+ACE of DIAMONDS
+2 of CLUBS
+KING of HEARTS
+Command:f
+
+Rank: 2
+
+Suit: clubs
+
+2 of CLUBS
+Command:f
+
+Rank: 4
+
+Suit: hearts
+
+Did not find player in list!
+Command:d
+
+Rank: king
+
+Suit: hearts
+
+Command:p
+
+ACE of DIAMONDS
+2 of CLUBS
+Command:d
+
+Rank: 2
+
+Suit: clubs
+
+Command:p
+
+ACE of DIAMONDS
+Command:d
+
+Rank: ace
+
+Suit: diamonds
+
+Command:p
+
+Command:q
+
+zhammons@snoopy:~/asgn3-zjhammons$ exit[K[K[K[K./playerlist 
+Command:b
+Number: 2
+
+Position: 4
+
+Goals: 5
+Command:p
+Player Number:2		 Position:4		 Goals Scored:5
+Command:b
+Number: 1
+
+Position: 1
+
+Goals: 1
+Command:p
+Player Number:1		 Position:1		 Goals Scored:1
+Player Number:2		 Position:4		 Goals Scored:5
+Command:e
+Number: 6
+
+Position: 7
+
+Goals: 8
+Command:p
+Player Number:1		 Position:1		 Goals Scored:1
+Player Number:2		 Position:4		 Goals Scored:5
+Player Number:6		 Position:7		 Goals Scored:8
+Command:f
+Number: 2
+
+Position: 4
+
+Goals: 5
+ Player Number:2		 Position:4		 Goals Scored:5
+Command:f
+Number: 6
+
+Position: 7
+
+Goals: 8
+ Player Number:6		 Position:7		 Goals Scored:8
+Command:d
+Number: 1
+
+Position: 1
+
+Goals: 1
+Command:p
+Player Number:2		 Position:4		 Goals Scored:5
+Player Number:6		 Position:7		 Goals Scored:8
+Command:d
+Number: 6
+
+Position: 7
+
+Goals: 8
+Command:p
+Player Number:2		 Position:4		 Goals Scored:5
+Command:q
+MEMWATCH detected 1 anomalies
+zhammons@snoopy:~/asgn3-zjhammons$ exit
+exit
+
+Script done on Thu 14 Mar 2019 07:00:30 PM EDT
