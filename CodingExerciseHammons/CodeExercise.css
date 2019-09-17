@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+}
+
+.row{
+    display: flex;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display:block;     
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.col-1 {width: 25%;}
+.col-2 {width: 50%;}
+.col-3 {width: 75%;}
+.col-4 {width: 100%;}
+
+.header {
+    text-align: center;
+    font-family: "arial", sans-serif;
+    font-size: 14px;
+    padding: 15px;
+}
+
+#intro {
+    font-size: 16px;
+    font-family: "arial", sans-serif;
+    color: black;
+}
+
+hr {
+    height: 4px;
+    color:  #005282;
+    background-color:  #005282;
+    border: none;
+}
+
+#topcheckbox {
+    margin-right: 20px;
+}
+
+#registerbutton {
+    margin: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-style: solid;
+    border-color: #05263a;
+    border-radius: 5px;
+    color: white;
+    background-color: #005282;
+    font-family: "arial", sans-serif;
+    font-size: 12px;
+}
+
+#responsetop {
+    color: black;
+    font-size: 14px;
+    font-family: "arial", sans-serif;
+}
+
+#calender {
+    border-right: 15px;
+    border-right-color: white;    
+    border-right-style: solid;
+    background-color: #71a1be;
+    font-family: "arial", sans-serif;
+}
+
+img {
+    padding: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+#date {
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    margin-bottom: 0px;        
+    font-family: "arial", sans-serif;
+}
+
+#countdown {
+    background-color: #71a1be;
+    font-family: "Lato", sans-serif;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+}
+
+#timer {
+    font-family: "Lato", sans-serif;
+    font-size: 40px;
+    
+}
+
+p {
+    font-size: 10px;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    color: white;
+}
+
+#author {
+    border-top: 15px;
+    border-top-color: white;    
+    border-top-style: solid;
+    background-color: #05263a;
+    font-family: "Lato", sans-serif;
+}
+
+figcaption {
+    font-family: "Lato", sans-serif;
+    font-style: italic;
+    font-size: 10px;
+    text-align: center;
+    color: white;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+}
+
+#checklist {
+    border-top: 15px;
+    border-top-color: white;    
+    border-top-style: solid;
+    background-color: lightgray;
+}
+
+h4 {
+    text-align: center;
+    font-size: 14px;
+}
+
+ul.list {
+    padding-left: 100px;
+    list-style-image: url(check.png);
+    display: inline-block;;
+}
+
+li {
+    font-size: 18px;
+    font-family: "arial", sans-serif;
+}
+
+#warning {
+    font-family: "Lato", sans-serif;
+    border-top: 15px;
+    border-color: white;
+    border-style: solid;
+    border-bottom: 0px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #f58c99;
+    color: white;
+}
+
+#exclimation {
+    vertical-align: middle;
+    margin-left: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+#claim {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-style: italic;
+    font-family: "arial", sans-serif;
+    padding: 40px;
+}
+
+/* could not center the triangle shape so I left it out
+#tri {
+      width: 0%;
+      height: auto;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-top: 100px solid black;
+}
+*/
+
+#reserve {
+    text-align: center;
+    font-family: "arial", sans-serif;
+}
+
+#bottomcheckbox {
+    margin-right: 20px;
+}
+
+#reservebutton {
+    margin: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-style: solid;
+    border-color: #05263a;
+    border-radius: 5px;
+    color: white;
+    background-color: #005282;
+    font-family: "arial", sans-serif;
+    font-size: 12px;
+}
+
+#responsebottom {
+    color: black;
+    font-size: 14px;
+    font-family: "arial", sans-serif;
+}

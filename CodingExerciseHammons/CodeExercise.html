@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="CodeExercise.css">  
+<title>CodeExercise</title>
+</head>
+    
+<body onload="countdownTimer()">
+<div class="header">
+  <p id="intro">Best-Selling Author and Gold Expert Jim Rickards’ Presents…</p>
+   <hr>    
+  <h1>“In just days a Never-Before- Seen Gold Anomaly Will Create a Totally New Class of Penny Gold Stocks...<bR><br>
+    I’ve Enlisted One of the World’s Top Geologists to Help Me Reveal... Live on Camera… What This 
+      Coming <span style="color: #005282">Gold Mega-Catalyst</span> Is And How You Could Make as Much as <span style="color: #005282">$101,000 in Profit</span>.”</h1>
+    <form id="registertop">   
+      <input id="topcheckbox" type="checkbox" class="filled-in" onclick="syncBottomBox()"/>I would like to receive a free newsletter<br>
+        <button type="button" id="registerbutton" onclick="register()">Register for this FREE <br> live Webinar Here!</button>
+    </form>
+      <p id="responsetop"></p>
+</div>
+    
+<div class="row">
+ <div class="col-1" id="calender">
+   <img src="RGS_Hotlist_0617_Calendar.png" alt="calender">
+   <p id="date"> May 29th</p>
+   <p>at 1:00 pm EST</p>      
+ </div>
+    
+ <div class="col-3" id="countdown">
+    <h2>TIME LEFT UNTIL THE WEBINAR STARTS...</h2>
+    <p id="timer"> TIME GOES HERE</p>  
+ </div>
+</div>
+
+<div class="row">
+ <div class="col-2" id="author">
+    <figure>
+      <img id="jim" src="RGS_Hotlist_0617_JimRickards.png" alt="Jim Rickards">
+      <figcaption>Presented by best-selling author and gold expert…</figcaption>  
+    </figure>
+    <h3>JAMES G. RICKARDS</h3> 
+ </div>
+
+ <div class="col-2" id="checklist">
+  <h4>I'm going to show you...</h4>  
+  <ul class="list">
+    <li>How a class of “off-limit” gold stocks could become fair game and shoot up in price… </li>
+    <li>Why just as many gold stocks could be CRUSHED. But this isn’t a bad thing. In fact, it’s going to open up a unique opportunity not seen in years</li>
+    <li>How it could compound an announcement from the Federal Reserve next week that could send physical gold prices much higher…</li>
+    <li>Why you’ll hear predictions of doom for the gold market (it’s important you understand the truth and know the real profit opportunity that’s being set up)...</li>
+    <li>Why we may see confirmation that gold will make a run at $2,000 sooner than anyone thinks...</li>  
+  </ul> 
+ </div>  
+</div>
+
+<div class="col-4" id="warning">
+<img id="exclimation" src="exclimationmark.png" alt="exclimation">
+  WARNING: SPACE IS LIMITED &amp; THESE LIVE TRAININGS ALWAYS FILL UP
+</div>
+    
+<div class="col-4" id="claim">
+  Claim your spot below before it's too late!    
+</div>
+
+<div class="col-4" id="reserve">
+ <form id="registerbottom">   
+      <input id="bottomcheckbox" type="checkbox" class="filled-in" onclick="syncTopBox()"/>I would like to receive a free newsletter<br>
+        <button type="button" id="reservebutton" onclick="register()">YES! Reserve My Spot Now! >></button>
+        <p id="responsebottom"></p>
+ </form>
+</div>
+<script src="CodeExercise.js"></script>
+</body>
+</html>
