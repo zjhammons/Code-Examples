@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Caesar Encryption App</string>
+    <string name="directions">Please enter an Integer from 1–25 below and click the submit button!</string>
+    <string name="submitButton">Submit!</string>
+    <string name="editTextString">Enter Integer Here!</string>
+    <string name="enterTextString">Please enter some text here!</string>
+    <string name="buttonOne">Click to shift text!</string>
+    <string name="buttonTwo">Go back to first screen!</string>
+    <string name="intLabel">PLEASE ENTER A INT FROM 1-25!!!</string>
+</resources>
