@@ -24,3 +24,11 @@ Asn2-zjhammons-master:
 
 Asn3-zjhammons-master:
   Linked lists in C.
+
+game:
+  Currently working on a Aim trainer game in Python using the pygame library. Random small block appears
+  and the player must click on them to get points.
+
+Python_API:
+  Using the Virustotal.com's API to create a python script that currently takes either a URL, file, or a
+  IP address as input then calls the API and goes to the reports webpage.
